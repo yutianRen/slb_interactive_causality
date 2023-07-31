@@ -1,0 +1,10 @@
+output*/
+result*/
+pkls*/
+*.png
+*.pkl
+*.xml
+landscape/
+*.pyc
+.idea/
+

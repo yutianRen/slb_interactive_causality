@@ -1,0 +1,391 @@
+
+max_frame: 600
+output_path: ./output/paperR1data_run_V3.1_b75f25h1015w0.5-0.50.5_s7
+num_sim: 1500
+rand_sleep_interval: 60
+apply_wind: True
+wind_mag: [0.5, -0.5, 0.5]
+wind_torq: [0, 0, 0]
+height_range: [10, 15]
+
+# (0 land, 1 hole, 2 dam/wall)
+params:
+  [
+    { # land 1
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 2,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice00/StandaloneLinux64/slice00',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice01/StandaloneLinux64/slice01',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice02/StandaloneLinux64/slice02',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice03/StandaloneLinux64/slice03',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice04/StandaloneLinux64/slice04',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice05/StandaloneLinux64/slice05',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+
+        { # land 1
+              friction: 0.25,
+              bounciness: 0.75,
+              category: 2,
+              url: 'file:////home/yutian/landAssets/sliceV3.1/slice10/StandaloneLinux64/slice10',
+              bounce_coeff: 0.0003,
+              fric_coeff: 0.0003,
+              revert_rate: 1.2,
+              disapp_coeff: 0.001
+        },
+        {
+              friction: 0.25,
+              bounciness: 0.75,
+              category: 0,
+              url: 'file:////home/yutian/landAssets/sliceV3.1/slice11/StandaloneLinux64/slice11',
+              bounce_coeff: 0.0003,
+              fric_coeff: 0.0003,
+              revert_rate: 1.2,
+              disapp_coeff: 0.001
+        },
+        {
+              friction: 0.25,
+              bounciness: 0.75,
+              category: 0,
+              url: 'file:////home/yutian/landAssets/sliceV3.1/slice12/StandaloneLinux64/slice12',
+              bounce_coeff: 0.0003,
+              fric_coeff: 0.0003,
+              revert_rate: 1.2,
+              disapp_coeff: 0.001
+        },
+        {
+              friction: 0.25,
+              bounciness: 0.75,
+              category: 0,
+              url: 'file:////home/yutian/landAssets/sliceV3.1/slice13/StandaloneLinux64/slice13',
+              bounce_coeff: 0.0003,
+              fric_coeff: 0.0003,
+              revert_rate: 1.2,
+              disapp_coeff: 0.001
+        },
+        {
+              friction: 0.25,
+              bounciness: 0.75,
+              category: 1,
+              url: 'file:////home/yutian/landAssets/sliceV3.1/slice14/StandaloneLinux64/slice14',
+              bounce_coeff: 0.0003,
+              fric_coeff: 0.0003,
+              revert_rate: 1.2,
+              disapp_coeff: 0.001,
+              poly: [[-6.517, 6.857], [-5.707,6.924],[-5.216,6.651],[-5.057,6.143],[-5.139,5.486],
+                        [-5.407,5.179],[-6.180,5.060],[-6.758,5.314],[-6.948,5.994],[-6.828,6.580]]
+        },
+        {
+              friction: 0.25,
+              bounciness: 0.75,
+              category: 0,
+              url: 'file:////home/yutian/landAssets/sliceV3.1/slice15/StandaloneLinux64/slice15',
+              bounce_coeff: 0.0003,
+              fric_coeff: 0.0003,
+              revert_rate: 1.2,
+              disapp_coeff: 0.001
+        },
+    { # land 1
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 2,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice20/StandaloneLinux64/slice20',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 1,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice21/StandaloneLinux64/slice21',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001,
+      poly: [[-2.753,-4.783],[-1.862,-4.970],[-1.157,-5.064],[-0.769,-5.333],[-0.528,-5.815],
+            [-0.506,-6.298],[-0.611,-6.863],[-1.074,-7.163],[-1.547,-6.933],[-2.020,-6.750],
+            [-2.668,-7.074],[-3.443,-7.327],[-3.763,-7.243],[-3.937,-6.754],[-3.763,-6.050],
+            [-3.491,-5.545]]
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice22/StandaloneLinux64/slice22',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice23/StandaloneLinux64/slice23',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 1,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice24/StandaloneLinux64/slice24',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001,
+      poly: [[-0.609,6.067],[-0.645,5.765],[-0.795,5.504],[-1.506,4.743],[-1.801,4.509],[-2.51,4.296],
+            [-3.02,4.358],[-3.547,4.851],[-3.685,5.694],[-3.35,6.356],[-2.706,6.626],[-1.353,6.626],[-0.862,6.465]]
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice25/StandaloneLinux64/slice25',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    { # land 1
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 2,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice30/StandaloneLinux64/slice30',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 1,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice31/StandaloneLinux64/slice31',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001,
+      poly: [[2.554,-6.739],[2.474,-7.618],[1.976,-8.293],[0.633,-7.315],[0.299,-6.436],[0.712,-5.642],
+            [1.425,-5.393],[2.265,-5.642]]
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice32/StandaloneLinux64/slice32',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 1,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice33/StandaloneLinux64/slice33',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001,
+      poly: [[2.547,4.481],[3.192,4.234],[3.498,3.518],[3.471,2.242],[3.192,1.765],[2.670,1.535],
+            [1.331,1.535],[0.810,1.765],[0.536,2.237],[0.536,3.671],[0.808,4.234],[1.465,4.481]]
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice34/StandaloneLinux64/slice34',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice35/StandaloneLinux64/slice35',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    { # land 1
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 2,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice40/StandaloneLinux64/slice40',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 1,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice41/StandaloneLinux64/slice41',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001,
+      poly: [[5.412,-5.936],[5.609,-6.412],[6.073,-6.675],[6.742,-6.392],[7.047,-5.722],[6.832,-5.203],
+            [6.312,-4.916],[5.680,-5.304]]
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice42/StandaloneLinux64/slice42',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 1,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice43/StandaloneLinux64/slice43',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001,
+      poly: [[5.483,3.471],[6.206,3.222],[6.478,2.515],[6.167,1.745],[5.465,1.536],
+            [4.764,1.808],[4.501,2.515],[4.763,3.194]]
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice44/StandaloneLinux64/slice44',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice45/StandaloneLinux64/slice45',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    { # land 1
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 2,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice50/StandaloneLinux64/slice50',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice51/StandaloneLinux64/slice51',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice52/StandaloneLinux64/slice52',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice53/StandaloneLinux64/slice53',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice54/StandaloneLinux64/slice54',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    },
+    {
+      friction: 0.25,
+      bounciness: 0.75,
+      category: 0,
+      url: 'file:////home/yutian/landAssets/sliceV3.1/slice55/StandaloneLinux64/slice55',
+      bounce_coeff: 0.0003,
+      fric_coeff: 0.0003,
+      revert_rate: 1.2,
+      disapp_coeff: 0.001
+    }
+  ]

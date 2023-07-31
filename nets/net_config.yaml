@@ -1,0 +1,33 @@
+# feeder
+feeder: feeder.Feeder
+seed: 10
+phase: 'train'
+print_log: True
+work_dir: 'result_'
+show_topk: [1]
+
+# model
+model_args:
+  in_feature: 3 # 60, 3
+  out_class: 4
+
+# optim
+optimizer: 'SGD'
+weight_decay: 0.0005
+base_lr: 0.01
+step: []
+
+
+# training
+num_epoch: 600 # 600
+device: [0]
+batch_size: 128 #32 600 128
+test_batch_size: 128
+nesterov: True
+start_epoch: 0
+eval_start: 0
+
+
+
+
+
