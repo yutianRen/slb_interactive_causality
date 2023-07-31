@@ -1,6 +1,6 @@
 
 max_frame: 600
-output_path: ./output/paperR1data_run_V3.1_b75f25h1015w0.5-0.50.5_s7
+output_path: ./output/run_V3.1_b75f25h1015w0.5-0.50.5_s0
 num_sim: 1500
 rand_sleep_interval: 60
 apply_wind: True
