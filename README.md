@@ -7,6 +7,8 @@ simulation and run the self-labeling test.
 **- 07/31/2023  [Note that]** the self-labeling script hasn't been uploaded yet. We will update the code once paper is
 accepted.
 
+**- 09/07/2023** Full code is released.
+
 ## Install required packages
 
 
@@ -24,9 +26,9 @@ conda env create -n slb --file slb_environment.yml
 
 
 In this simulation, we use a customized landscape. The landscape obj files are 
-in ```/landscape/landV3.1/``` directory. First we need to follow the [method](https://github.com/threedworld-mit/tdw/blob/master/Documentation/lessons/custom_models/custom_models.md) 
-of importing
-custom object files in TDW to load the landscape files. Here, we can run
+in ```/landscape/landV3.1/``` directory that can be downloaded from [here](https://drive.google.com/drive/folders/1wPcWQjs88ON8h_E7BlC1A9-qPjeesfM4?usp=sharing). 
+First we need to follow the [method](https://github.com/threedworld-mit/tdw/blob/master/Documentation/lessons/custom_models/custom_models.md) 
+of importing custom object files in TDW to load the landscape files. Here, we can run
 ```
 python3 load_landscape_obj.py
 ```
@@ -86,8 +88,17 @@ python3 slb.py --pretrain_path run_V3.1_b75f25h1015_balanced_6000.pkl
         --out_dir_path result
 ```
 
-
-
+## Citation
+Please consider citing this work if you find it helpful:
+```
+@ARTICLE{self_labeling,
+author={Ren, Yutian and Yen, Aaron Haohua and Li, Guann-Pyng},
+journal={IEEE Transactions on Artificial Intelligence}, 
+title={A Self-Labeling Method for Adaptive Machine Learning by Interactive Causality}, 
+year={2023},
+pages={1-10},
+doi={10.1109/TAI.2023.3311782}}
+```
 
 
 

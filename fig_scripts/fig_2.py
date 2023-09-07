@@ -20,7 +20,7 @@ if __name__ == '__main__':
     fig.subplots_adjust(left=0.05, bottom=0.05, right=0.98, top=0.98, wspace=0.25, hspace=0.40)
 
 
-    error = 2.0
+    error = 0.6
     # DS:
     # no disturbance: x dot = x, y dot = y+x
     # with disturbance: x dot = x+x, y dot = y+x
@@ -54,7 +54,9 @@ if __name__ == '__main__':
     # no disturbance: x dot = x, y dot = y+x
     # with disturbance: x dot = x - 1/2*x, y dot = y + x
     # Only for positive systems.
-    y2_slb = x2*np.log(x2**2/np.square(x1)) + y1*x2**2/np.square(x1) # checked
+    # y2_slb = x2*np.log(x2**2/np.square(x1)) + y1*x2**2/np.square(x1) # checked
+    y2_slb_e = x2*2*error*np.log(x2/x1) + y1*(x2/x1)**(2*error) # checked
+
     y2_trad = x2*np.log(x2/x1) + x2/x1 * y1 # checked
     y2_forw = y1*x2/x1 + 2*x2 - 2*x1*np.sqrt(x2/x1) # checked
     y2_gt = x2**2/np.square(x1)*y1 + 2*x2**2/x1 - 2 *x2 # checked
@@ -64,7 +66,7 @@ if __name__ == '__main__':
     ax2.set_title(r'$f(x)=x, d(x)=-\frac{1}{2}x$', fontsize=24)
     ax2.plot(x1, y2_trad, label='trad', linewidth=2.5)
     ax2.plot(x1, y2_gt, label='fs', linewidth=2.5)
-    ax2.plot(x1, y2_slb, label='slb', linewidth=2.5)
+    ax2.plot(x1, y2_slb_e, label='slb', linewidth=2.5)
     ax2.plot(x1, y2_forw, label='fwd', linewidth=2.5)
     ax2.set_xlabel(r'$x_{1}$', fontsize=24)
     ax2.set_ylabel(r'$y_{2}$', fontsize=24)
