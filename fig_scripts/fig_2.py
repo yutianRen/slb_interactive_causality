@@ -54,8 +54,8 @@ if __name__ == '__main__':
     # no disturbance: x dot = x, y dot = y+x
     # with disturbance: x dot = x - 1/2*x, y dot = y + x
     # Only for positive systems.
-    # y2_slb = x2*np.log(x2**2/np.square(x1)) + y1*x2**2/np.square(x1) # checked
-    y2_slb_e = x2*2*error*np.log(x2/x1) + y1*(x2/x1)**(2*error) # checked
+    y2_slb = x2*np.log(x2**2/np.square(x1)) + y1*x2**2/np.square(x1) # checked
+    # y2_slb_e = x2*2*error*np.log(x2/x1) + y1*(x2/x1)**(2*error) # checked
 
     y2_trad = x2*np.log(x2/x1) + x2/x1 * y1 # checked
     y2_forw = y1*x2/x1 + 2*x2 - 2*x1*np.sqrt(x2/x1) # checked
