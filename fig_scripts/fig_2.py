@@ -29,8 +29,8 @@ if __name__ == '__main__':
         # y2_slb_e = (x2*np.log((x2/x1)**(error/2)) + y1*(x2/x1)**(error/2)) * 1
         y2_forw = x2/x1 * (x2-x1+y1) # checked
         y2_trad = x2*np.log(x2/x1) + x2/x1 * y1 # checked
-        # y2_gt = x2 - np.sqrt(x1*x2) + y1*np.sqrt(x2/x1)
-        y2_gt = x2 + (y1-x1) * np.sqrt(x2/x1) # checked
+        y2_gt = x2 - np.sqrt(x1*x2) + y1*np.sqrt(x2/x1)
+        # y2_gt = x2 + (y1-x1) * np.sqrt(x2/x1) # checked
     else: # for negative systems
         print('negative system')
         y2_slb = np.sqrt(x1 / x2) * (0.5 * np.sqrt(x1 * x2) * (x2 / x1 - 1) + y1)
@@ -66,7 +66,7 @@ if __name__ == '__main__':
     ax2.set_title(r'$f(x)=x, d(x)=-\frac{1}{2}x$', fontsize=24)
     ax2.plot(x1, y2_trad, label='trad', linewidth=2.5)
     ax2.plot(x1, y2_gt, label='fs', linewidth=2.5)
-    ax2.plot(x1, y2_slb_e, label='slb', linewidth=2.5)
+    ax2.plot(x1, y2_slb, label='slb', linewidth=2.5)
     ax2.plot(x1, y2_forw, label='fwd', linewidth=2.5)
     ax2.set_xlabel(r'$x_{1}$', fontsize=24)
     ax2.set_ylabel(r'$y_{2}$', fontsize=24)
